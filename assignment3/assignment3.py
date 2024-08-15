@@ -1,7 +1,7 @@
 import tkinter as tk
 
 class Calculator:
-    def _init_(self):
+    def __init__(self):
         self.root = tk.Tk()
         self.root.geometry("300x300")
         self.label = tk.Label(self.root, text="Calculator")
@@ -70,5 +70,5 @@ class Calculator:
             self.entry.delete(0, tk.END)
         else:
             self.entry.insert(tk.END, label)
-if __name__=="main":
-    cal= (class calculator)
+if __name__=="__main__":
+    cal= Calculator()
